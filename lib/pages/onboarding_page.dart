@@ -88,7 +88,7 @@ class OnboardingPage extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Get.to((const SignInPage()));
+                      Get.to((const SignInPage()), transition: Transition.fade, duration: const Duration(milliseconds: 1400));
                     },
                     style: ElevatedButton.styleFrom(
                         fixedSize: const Size(350, 60),

@@ -10,12 +10,6 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return FlutterSplashScreen.fadeIn(
           backgroundColor: Colors.white,
-          onInit: () {
-            debugPrint("On Init");
-          },
-          onEnd: () {
-            debugPrint("On End");
-          },
           childWidget: SizedBox(
             height: 200,
             width: 200,
@@ -23,7 +17,7 @@ class SplashScreen extends StatelessWidget {
           ),
           onAnimationEnd: () => debugPrint("On Fade In End"),
           nextScreen: const OnboardingPage(),
-          duration: const Duration(milliseconds: 1500),
+          duration: const Duration(milliseconds: 1600),
         );
   }
 }

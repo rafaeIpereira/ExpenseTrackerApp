@@ -85,7 +85,7 @@ class _SignInPageState extends State<SignInPage> {
                           TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                     ),
                     onPressed: () => {
-                     Get.to((const HomePage()))
+                     Get.to((const HomePage()), transition: Transition.fade, duration: const Duration(milliseconds: 1500))
                     },
                   ),
                   const SizedBox(
@@ -103,7 +103,7 @@ class _SignInPageState extends State<SignInPage> {
                             'Sign Up',
                           ),
                           onPressed: () {
-                            Get.to((const SignUpPage()));
+                            Get.to((const SignUpPage()), transition: Transition.fade, duration: const Duration(milliseconds: 1500));
                           }),
                     ],
                   )

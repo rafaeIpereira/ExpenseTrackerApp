@@ -117,7 +117,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       TextButton(
                           child:  const Text('Sign In',),
                           onPressed: () {
-                            Get.to((const SignInPage()));
+                            Get.to((const SignInPage()), transition: Transition.fade, duration: const Duration(milliseconds: 1500));
                           }),
                     ],
                   )
